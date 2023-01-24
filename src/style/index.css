@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Montserrat:wght@700&family=Quicksand:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&display=swap');
+:root{
+    --main-color: #8DA658 ;
+    --Second-color: #40372F ;
+    --th-color: #73655A ;
+    --th1-color:#A69C94;
+    --th2-color: #D7D9D9;
+    --main-mix: linear-gradient(to bottom, var(--main-color),var(--Second-color)); ;
+    --white:white;
+    --font-one: 'Quicksand', sans-serif;
+    --font-two: 'Montserrat', sans-serif;
+    --font-three: 'Cabin', sans-serif;
+    --font-four: 'Roboto Slab', serif;
+    --font-five:'Dangrek', cursive;
+}
+::-webkit-scrollbar {width: 0.75vw; }
+::-webkit-scrollbar-track {background: #9b969600;}
+::-webkit-scrollbar-thumb {background: var(--Second-color);}
+::-webkit-scrollbar-thumb:hover {background: var(--main-color)}
+
+*{
+    /* box- sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-one);
+  /* outline: rgb(98, 0, 255) solid 1px ; */
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+img{
+  -webkit-user-select: none;
+  user-select: none;
+}
+::selection{
+color:var(--main-color);
+  background:   var(--th2-color) ;
+}
+
+body{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+/* .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* Hide the browser's default checkbox */
+/* .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+/* Create a custom checkbox */
+/* .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+} */
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+} */
+.header{
+  height: 10vh;
+  width: 80vw;
+  background-color: #40372faa;
+  color: var(--main-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: #000000 5px 5px 20px -10px  ;
+}
+.container{
+  width: 80vw;
+  min-height: 50vh;
+  background-color:  rgba(166, 156, 148, 0.197);
+  border-radius: 10px;
+  box-shadow: #00000072 5px 5px 20px -10px  ;
+
+
+  display: flex;
+  /* flex-direction: ; */
+  justify-content: start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  /* padding:0 10vw 0 10vw ; */
+gap: 20px;
+}
+
+.card{
+  max-width: 400px;
+  min-width: 200px;
+  border-radius: 0px;
+  height: 250px;
+  background: #8da65817;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+margin: 20px;
+border: #ffffff 1px solid;
+box-shadow: #dddbdb15 1px 1px 1px 1px ;
+}
+
+
+.card>img{
+  height: 50%;
+  border-radius: 50%;
+}
+
+.card a{
+  color: inherit;
+  text-decoration: none;
+}
+.card a:hover{
+  color: var(--main-color);
+  text-decoration: none;
+}
