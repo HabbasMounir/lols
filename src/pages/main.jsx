@@ -26,17 +26,10 @@ const conntent ={
 
 
 let Lol=()=>{
-//     const stylediv={
-//             color:"red",
-//             fontSize:'20px',
-//             reSize:"both",
-//             minHight:'100px',
-//             maxWidth:'100px',
-//             background:'black'
-// }
+
     let myName='Mounir habbas'
     let firstName=myName.split(' ')[0]
-    let myRadio
+
     let i=0
      myName.split(' ').length<=2?i="<div>12</div>":i="ydek";
     return(
